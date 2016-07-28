@@ -10,6 +10,18 @@
       <script async src="https://cdn.ampproject.org/v0.js"></script>
   </head>
   <body>
+    <h1>Simple table</h1>
+    <p>AMP content should appear within table, check source.</p>
+    <table>
+      <amp-list width=auto height=100 layout=fixed-height
+                src="https://ampbyexample.com/json/examples.json">
+        <template type="amp-mustache" id="amp-template-id">
+          <tr><td>{{title}}</td></tr>
+        </template>
+      </amp-list>
+    </table>
+    <h1>More complex table</h1>
+    <p>AMP list content should appear after header.</p>
     <table>
       <thead>
         <th>Header</th>
