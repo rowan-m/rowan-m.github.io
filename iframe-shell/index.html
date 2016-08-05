@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>A fragile shell</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-deep_orange.min.css" />
+    <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+</head>
+
+<body>
+    <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">A fragile shell</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link amplink" target="amp-container" href="/amp/01.amp.html?embed=1">Page 1</a>
+                <a class="mdl-navigation__link amplink" target="amp-container" href="/amp/02.amp.html?embed=1">Page 2</a>
+                <a class="mdl-navigation__link amplink" target="amp-container" href="/amp/03.amp.html?embed=1">Page 3</a>
+                <a class="mdl-navigation__link amplink" target="amp-container" href="/amp/04.amp.html?embed=1">Page 4</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <iframe name="amp-container" id="amp-container" style="margin: 20px 0 0 80px; height: 100%;" src="/placeholder.html"></iframe>
+            </div>
+        </main>
+    </div>
+    <script>
+        if (window.location.hash) {
+            var hash = window.location.hash.substring(1);
+            document.getElementById('amp-container').src = '/amp/' + hash + '.amp.html?embed=1';
+        }
+
+        var links = document.getElementsByClassName('amplink');
+
+        for (var i = 0; i < links.length; i++) {
+            links[i].onclick = function() {
+                var layout = document.querySelector('.mdl-layout');
+                layout.MaterialLayout.toggleDrawer();
+                history.pushState(null, 'AMP page', '#' + this.getAttribute('href').substring(5, 7));
+            }
+        }
+
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+        }
+    </script>
+</body>
+
+</html>
