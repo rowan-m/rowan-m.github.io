@@ -6,7 +6,7 @@ self.addEventListener('fetch', event => {
         ampPage = event.request.url.substring(suffixIndex - 2, suffixIndex);
         console.log(ampPage);
         event.respondWith(
-            fetch('/#' + ampPage)
+            fetch('/iframe-shell/#' + ampPage)
         );
     }
 
