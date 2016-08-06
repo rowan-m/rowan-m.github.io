@@ -11,8 +11,13 @@
 </head>
 
 <body>
-    <!-- No header, and the drawer stays open on larger screens (fixed drawer). -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">A fragile shell</span>
+            </div>
+        </header>
         <div class="mdl-layout__drawer">
             <span class="mdl-layout-title">A fragile shell</span>
             <nav class="mdl-navigation">
@@ -25,9 +30,11 @@
         <main class="mdl-layout__content">
             <div class="page-content">
                 <iframe name="amp-container" id="amp-container" style="margin: 20px 0 0 80px; height: 100%;" src="/iframe-shell/placeholder.html"></iframe>
+
             </div>
         </main>
     </div>
+
     <script>
         if (window.location.hash) {
             var hash = window.location.hash.substring(1);
@@ -38,9 +45,8 @@
 
         for (var i = 0; i < links.length; i++) {
             links[i].onclick = function() {
-                var layout = document.querySelector('.mdl-layout');
-                layout.MaterialLayout.toggleDrawer();
-                history.pushState(null, 'AMP page', '#' + this.getAttribute('href').substring(5, 7));
+                history.pushState(null, 'AMP page', '#' + this.getAttribute('href').substring(18, 20));
+                document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer();
             }
         }
 
