@@ -3,11 +3,8 @@ self.addEventListener('fetch', event => {
     isEmbed = event.request.url.endsWith('?embed=1');
 
     if (!isEmbed && suffixIndex !== -1) {
-        ampPage = event.request.url.substring(suffixIndex - 2, suffixIndex);
-        console.log(ampPage);
         event.respondWith(
-            fetch('/iframe-shell/#' + ampPage)
+            fetch('/iframe-shell/')
         );
     }
-
 });

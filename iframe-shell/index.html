@@ -36,16 +36,18 @@
     </div>
 
     <script>
-        if (window.location.hash) {
-            var hash = window.location.hash.substring(1);
-            document.getElementById('amp-container').src = '/iframe-shell/amp/' + hash + '.amp.html?embed=1';
+        suffixIndex = window.location.pathname.indexOf('.amp.html');
+
+        if (suffixIndex !== -1) {
+            document.getElementById('amp-container').src = window.location.pathname + '?embed=1';
         }
 
         var links = document.getElementsByClassName('amplink');
 
         for (var i = 0; i < links.length; i++) {
             links[i].onclick = function() {
-                history.pushState(null, 'AMP page', '#' + this.getAttribute('href').substring(18, 20));
+                path = this.getAttribute('href').split('?')[0];
+                history.pushState(null, 'AMP page', path);
                 document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer();
             }
         }
