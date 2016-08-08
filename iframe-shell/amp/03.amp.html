@@ -30,6 +30,7 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
   <style amp-custom>
     body {
@@ -42,6 +43,24 @@
   <h1>I've been framed a third time</h1>
   <p>This page is not stored in the service worker cache. If you go offline and try to load it, you should see the offline page.</p>
   <amp-img src="/iframe-shell/img/shell03.jpg" width="2034" height="1338" layout="responsive" alt="Illustration of some seashells" attribution="American Seashells by R. Tucker Abbot, M.S"></amp-img>
+  <amp-analytics type="googleanalytics" id="googleanalytics">
+    <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-24332431-2"
+        },
+        "triggers": {
+          "defaultPageview": {
+            "on": "visible",
+            "request": "pageview",
+            "vars": {
+              "title": "I've been framed a third time"
+            }
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
   <amp-install-serviceworker src="/iframe-shell/sw.js" data-iframe-src="/iframe-shell/sw.html" layout="nodisplay">
   </amp-install-serviceworker>
 </body>
