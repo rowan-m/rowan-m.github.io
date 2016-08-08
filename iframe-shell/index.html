@@ -50,16 +50,21 @@
   </div>
 
   <script>
+    // The service worker will respond with this page when an "amp.html" page has been requested
     suffixIndex = window.location.pathname.indexOf('.amp.html');
 
+    // So, if we've got amp.html in the URL
     if (suffixIndex !== -1) {
+      // We need to make sure we load that AMP page in the iframe
       document.getElementById('amp-container').src = window.location.pathname + '?embed=1';
     }
 
     var links = document.getElementsByClassName('amplink');
 
+    // When one of the navigation links is clicked it will load the content in the iframe
     for (var i = 0; i < links.length; i++) {
       links[i].onclick = function() {
+        // We need to update the location bar to reflect the perceived page
         path = this.getAttribute('href').split('?')[0];
         history.pushState(null, 'AMP page', path);
         document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer();
