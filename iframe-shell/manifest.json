@@ -1,5 +1,5 @@
 {
-  "name": "AMP Shell",
+  "name": "AMP in a Shell",
   "short_name": "AMP Shell",
   "start_url": "/iframe-shell/index.html",
   "display": "standalone",

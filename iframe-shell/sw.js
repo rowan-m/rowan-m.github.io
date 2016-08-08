@@ -6,11 +6,13 @@ self.addEventListener('install', function(event) {
       return cache.addAll([
         '/iframe-shell/',
         '/iframe-shell/index.html',
-        '/iframe-shell/placeholder.html',
+        '/iframe-shell/offline.html',
         '/iframe-shell/amp/01.amp.html?embed=1',
         '/iframe-shell/amp/02.amp.html?embed=1',
-        '/iframe-shell/amp/03.amp.html?embed=1',
-        '/iframe-shell/amp/04.amp.html?embed=1',
+        '/iframe-shell/img/shell.jpg',
+        '/iframe-shell/img/shell02.jpg',
+        '/iframe-shell/img/icons/favicon-16x16.png',
+        '/iframe-shell/img/icons/favicon-96x96.png',
       ]);
     })
   );
@@ -28,14 +30,10 @@ self.addEventListener('fetch', function(event) {
     );
   } else {
     event.respondWith(
-      caches.open(cacheName).then(function(cache) {
-        return cache.match(event.request).then(function(response) {
-          var fetchPromise = fetch(event.request).then(function(networkResponse) {
-            cache.put(event.request, networkResponse.clone());
-            return networkResponse;
-          })
-          return response || fetchPromise;
-        })
+      caches.match(event.request).then(function(response) {
+        return response || fetch(event.request);
+      }).catch(function() {
+        return caches.match('/iframe-shell/offline.html');
       })
     );
   }
