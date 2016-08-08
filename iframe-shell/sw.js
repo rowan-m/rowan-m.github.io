@@ -8,10 +8,12 @@ self.addEventListener('install', function(event) {
         '/iframe-shell/',
         '/iframe-shell/index.html',
         '/iframe-shell/offline.html',
+        '/iframe-shell/splash.html',
         '/iframe-shell/amp/01.amp.html?embed=1',
         '/iframe-shell/amp/02.amp.html?embed=1',
         '/iframe-shell/img/shell.jpg',
         '/iframe-shell/img/shell02.jpg',
+        '/iframe-shell/img/icons/android-icon-96x96.png',
       ]);
     })
   );
