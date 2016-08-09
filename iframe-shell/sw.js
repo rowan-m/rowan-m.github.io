@@ -1,4 +1,4 @@
-var cacheName = 'fragile-shell-v20160806';
+var cacheName = 'fragile-shell-v20160809';
 
 // Cache a very basic selection of resources
 self.addEventListener('install', function(event) {
@@ -20,8 +20,8 @@ self.addEventListener('install', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-  suffixIndex = event.request.url.indexOf('.amp.html');
-  isEmbed = event.request.url.endsWith('?embed=1');
+  var suffixIndex = event.request.url.indexOf('.amp.html');
+  var isEmbed = event.request.url.endsWith('?embed=1');
 
   // If the requested URL contains "amp.html" and is not an embed,
   // i.e. the AMP page has been requested directly
