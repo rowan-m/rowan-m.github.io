@@ -87,7 +87,7 @@
     for (var i = 0; i < links.length; i++) {
       links[i].onclick = function() {
         // We need to update the location bar to reflect the perceived page
-        path = this.getAttribute('href').split('?')[0];
+        var path = this.getAttribute('href').split('?')[0];
         history.pushState(null, 'AMP page', path);
         document.querySelector('.mdl-layout').MaterialLayout.toggleDrawer();
       }
