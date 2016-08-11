@@ -26,6 +26,11 @@
 <body>
   <h1>Simplest possible page</h1>
   <p>For performance comparison.</p>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/iframe-shell/sw.js')
+    }
+  </script>
 </body>
 
 </html>
