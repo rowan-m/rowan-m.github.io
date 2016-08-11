@@ -42,8 +42,6 @@ self.addEventListener('fetch', function(event) {
   var suffixIndex = event.request.url.indexOf('.amp.html');
 
   if (suffixIndex !== -1) {
-    console.log('event.request.url:', event.request.url);
-    console.log('event.request.mode:', event.request.mode);
     var urlComponents = event.request.url.split('?');
     // If the path ends with ".amp.html" it should be one of our AMP pages
     var isAmpPage = urlComponents[0].endsWith('.amp.html');
