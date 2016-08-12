@@ -38,24 +38,19 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-  // If the URL contains ".amp.html" it might be a page we're interested in
-  var suffixIndex = event.request.url.indexOf('.amp.html');
+  var urlComponents = event.request.url.split('?');
+  // If the path ends with ".amp.html" it should be one of our AMP pages
+  var isAmpPage = urlComponents[0].endsWith('.amp.html');
+  // And if it has not been requested as an embed with the GET parameter
+  var isNotEmbedded = (urlComponents[1] !== 'embed=1');
 
-  if (suffixIndex !== -1) {
-    var urlComponents = event.request.url.split('?');
-    // If the path ends with ".amp.html" it should be one of our AMP pages
-    var isAmpPage = urlComponents[0].endsWith('.amp.html');
-    // And if it has not been requested as an embed with the GET parameter
-    var isNotEmbedded = urlComponents[1] !== 'embed=1';
-
-    if (isAmpPage && isNotEmbedded) {
-      event.respondWith(
-        caches.match(new Request('/iframe-shell/index.html')).then(function(response) {
-          // Then we need to serve the shell instead
-          return response || fetch('/iframe-shell/index.html');
-        })
-      );
-    }
+  if (isAmpPage && isNotEmbedded) {
+    event.respondWith(
+      caches.match(new Request('/iframe-shell/index.html')).then(function(response) {
+        // Then we need to serve the shell instead
+        return response || fetch('/iframe-shell/index.html');
+      })
+    );
   } else {
     // Otherwise, we have some very simple functionality to check the cache
     // and serve an offline page when not connected.
