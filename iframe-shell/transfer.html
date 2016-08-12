@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>AMP in a shell</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/iframe-shell/img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/iframe-shell/img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/iframe-shell/img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/iframe-shell/img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/iframe-shell/img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/iframe-shell/img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/iframe-shell/img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/iframe-shell/img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/iframe-shell/img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/iframe-shell/img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/iframe-shell/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/iframe-shell/img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/iframe-shell/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/iframe-shell/manifest.json">
+  <meta name="msapplication-TileColor" content="#607d8b">
+  <meta name="msapplication-TileImage" content="/iframe-shell/img/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#607d8b">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue_grey-amber.min.css" />
+  <script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+  <style>
+    #amp-container {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>This is not an AMP page</h1>
+  <p>Sometimes you'll want to switch between AMP and HTML. This page shows what happens in Analytics when you have a mixed AMP and HTML journey.</p>
+  <p>Here's a <a href="/iframe-shell/amp/04.amp.html?embed=1">link to take you to an AMP page</a>.</p>
+
+  <script>
+    // Register the service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/iframe-shell/sw.js')
+    }
+
+    // Google Analytics boilerplate
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-24332431-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+</body>
+
+</html>
