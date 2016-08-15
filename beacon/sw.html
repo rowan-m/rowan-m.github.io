@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Installing service worker</title>
+</head>
+
+<body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/beacon/sw.js');
+    }
+  </script>
+</body>
+
+</html>

@@ -34,6 +34,7 @@
   <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
   <script async custom-element="amp-instagram" src="https://cdn.ampproject.org/v0/amp-instagram-0.1.js"></script>
+  <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
   <style amp-custom>
@@ -212,6 +213,10 @@
       }
     </script>
   </amp-analytics>
+  <amp-install-serviceworker src="/beacon/sw.js"
+      data-iframe-src="beacon/sw.html"
+      layout="nodisplay">
+  </amp-install-serviceworker>
 </body>
 
 </html>
