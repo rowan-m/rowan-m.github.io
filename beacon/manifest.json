@@ -1,5 +1,5 @@
 {
-  "short_name": "A wild Rowan",
+  "short_name": "A wild Rowan appears!",
   "name": "A wild Rowan appears!",
   "icons": [{
     "src": "/beacon/img/android-icon-36x36.png",
@@ -36,7 +36,7 @@
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#52614b",
-  "background_color": "#B5dda4",
+  "background_color": "#f9eccc",
   "lang": "en-GB",
   "scope": "/beacon/"
 }
