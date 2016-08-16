@@ -1,6 +1,14 @@
 {
   "short_name": "A wild Rowan appears!",
   "name": "A wild Rowan appears!",
+  "start_url": "/beacon/index.html",
+  "display": "standalone",
+  "theme_color": "#52614b",
+  "background_color": "#f9eccc",
+  "orientation": "any",
+  "lang": "en-GB",
+  "dir": "ltr",
+  "scope": "/beacon/",
   "icons": [{
     "src": "/beacon/img/android-icon-36x36.png",
     "sizes": "36x36",
@@ -31,12 +39,5 @@
     "sizes": "192x192",
     "type": "image/png",
     "density": "4.0"
-  }],
-  "start_url": "/beacon/index.html",
-  "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#52614b",
-  "background_color": "#f9eccc",
-  "lang": "en-GB",
-  "scope": "/beacon/"
+  }]
 }
