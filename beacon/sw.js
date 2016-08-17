@@ -1,4 +1,4 @@
-var cacheName = 'beacon-v20160816';
+var cacheName = 'beacon-v20160817';
 
 // Cache a very basic selection of resources
 self.addEventListener('install', function(event) {
