@@ -153,30 +153,49 @@
     </section>
     <section id="section-twitter">
       <h2>Twitter</h2>
-      <p>Send <a href="https://twitter.com/rowan_m" class="social-link" data-vars-event-label="twitter-profile" data-vars-social-network="twitter" data-vars-social-action="profile" data-vars-social-target="https://twitter.com/rowan_m">@rowan_m</a> a message
-        to tell me about how you found the beacon.</p>
+      <p>Send <a href="https://twitter.com/rowan_m" class="social-link"
+        data-vars-event-category="Twitter link" data-vars-event-action="View profile"
+        data-vars-social-network="Twitter" data-vars-social-action="View profile" data-vars-social-target="https://twitter.com/rowan_m"
+        >@rowan_m</a> a message to tell me about how you found the beacon.</p>
       <div>
-        <amp-social-share type="twitter" class="social-link" data-vars-event-label="twitter-tweet" width="64" height="64" data-param-text="@rowan_m I found your beacon and…" data-param-url="" data-vars-social-network="twitter" data-vars-social-action="post" data-vars-social-target="https://twitter.com/rowan_m">
+        <amp-social-share type="twitter" class="social-link" width="64" height="64"
+        data-param-text="@rowan_m I found your beacon and…" data-param-url=""
+        data-vars-event-category="Twitter link" data-vars-event-action="Post"
+        data-vars-social-network="Twitter" data-vars-social-action="Post" data-vars-social-target="https://twitter.com/rowan_m">
         </amp-social-share>
       </div>
     </section>
     <section id="section-instagram">
       <h2>Instagram</h2>
-      <p>Tag <a href="https://www.instagram.com/rowan_m/" data-vars-social-network="instagram" data-vars-social-action="profile" data-vars-social-target="https://www.instagram.com/rowan_m/">@rowan_m</a> with a photo of where you found the beacon.</p>
-      <amp-instagram data-shortcode="nasUM0xPnv" width="300" height="300" layout="responsive" data-vars-social-network="instagram" data-vars-social-action="follow" data-vars-social-target="https://www.instagram.com/rowan_m/">
+      <p>Tag <a href="https://www.instagram.com/rowan_m/" class="social-link"
+        data-vars-event-category="Instagram link" data-vars-event-action="View profile"
+        data-vars-social-network="Instagram" data-vars-social-action="View profile" data-vars-social-target="https://www.instagram.com/rowan_m/"
+        >@rowan_m</a> with a photo of where you found the beacon.</p>
+      <amp-instagram class="social-link" data-shortcode="nasUM0xPnv" width="300" height="300" layout="responsive"
+      data-vars-event-category="Instagram" data-vars-event-action="Follow"
+      data-vars-social-network="instagram" data-vars-social-action="Follow" data-vars-social-target="https://www.instagram.com/rowan_m/">
       </amp-instagram>
     </section>
     <section id="section-gplus">
       <h2>Google+</h2>
-      <p>Ping <a href="https://plus.google.com/+RowanMerewood" class="social-link" data-vars-event-label="gplus-profile" data-vars-social-network="gplus" data-vars-social-action="profile" data-vars-social-target="https://plus.google.com/+RowanMerewood">+RowanMerewood</a>        to let me know where you saw the beacon.</p>
+      <p>Ping <a href="https://plus.google.com/+RowanMerewood" class="social-link"
+        data-vars-event-category="Google+ link" data-vars-event-action="View profile"
+        data-vars-social-network="Google+" data-vars-social-action="View profile" data-vars-social-target="https://plus.google.com/+RowanMerewood"
+        >+RowanMerewood</a> to let me know where you saw the beacon.</p>
     </section>
     <section id="section-snapchat">
       <h2>Snapchat</h2>
-      <p>Or if you want to get all ephemeral, add <a href="https://www.snapchat.com/add/r0wan_m" class="social-link" data-vars-event-label="snapchat-profile" data-vars-social-network="snapchat" data-vars-social-action="profile" data-vars-social-target="https://www.snapchat.com/add/r0wan_m">r0wan_m</a>        and let me know about your discovery.</p>
+      <p>Or if you want to get all ephemeral, add <a href="https://www.snapchat.com/add/r0wan_m" class="social-link"
+        data-vars-event-category="Snapchat link" data-vars-event-action="View profile"
+        data-vars-social-network="Snapchat" data-vars-social-action="View profile" data-vars-social-target="https://www.snapchat.com/add/r0wan_m"
+        >r0wan_m</a> and let me know about your discovery.</p>
     </section>
     <section id="section-github">
       <h2>GitHub</h2>
-      <p>Of course, you can always <a href="https://github.com/rowan-m/rowan-m.github.io/tree/master/beacon" class="social-link" data-vars-event-label="github-code" data-vars-social-network="github" data-vars-social-action="profile" data-vars-social-target="https://github.com/rowan-m/rowan-m.github.io/tree/master/beacon">take a look at the source for this page</a>        as well.</p>
+      <p>Of course, you can always <a href="https://github.com/rowan-m/rowan-m.github.io/tree/master/beacon" class="social-link"
+        data-vars-event-category="GitHub link" data-vars-event-action="View code"
+        data-vars-social-network="GitHub" data-vars-social-action="View code" data-vars-social-target="https://github.com/rowan-m/rowan-m.github.io/tree/master/beacon"
+        >take a look at the source for this page</a> as well.</p>
     </section>
   </main>
   <footer>
@@ -199,35 +218,23 @@
       }
     </script>
   </amp-analytics>
-  <amp-analytics type="googleanalytics" id="ga2-linkclicks">
+  <amp-analytics type="googleanalytics" id="ga2-links">
     <script type="application/json">
       {
         "vars": {
           "account": "UA-24332431-3"
         },
         "triggers": {
-          "trackClickOnLinks": {
+          "trackLinkEvents": {
             "on": "click",
             "selector": ".social-link",
             "request": "event",
             "vars": {
-              "eventCategory": "social link",
-              "eventAction": "click",
-              "eventLabel": "{$eventLabel}"
+              "eventCategory": "{$eventCategory}",
+              "eventAction": "{$eventAction}"
             }
-          }
-        }
-      }
-    </script>
-  </amp-analytics>
-  <amp-analytics type="googleanalytics" id="ga3-social">
-    <script type="application/json">
-      {
-        "vars": {
-          "account": "UA-24332431-3"
-        },
-        "triggers": {
-          "trackClickOnTwitterLink": {
+          },
+          "trackSocialEvents": {
             "on": "click",
             "selector": ".social-link",
             "request": "social",
