@@ -2,7 +2,6 @@ var cacheName = 'beacon-v20160817';
 
 // Cache a very basic selection of resources
 self.addEventListener('install', function(event) {
-  self.skipWaiting();
   event.waitUntil(
     caches.open(cacheName).then(function(cache) {
       return cache.addAll([
@@ -29,13 +28,13 @@ self.addEventListener('activate', function(event) {
           }
         })
       );
-    }).then(function() {
-      return self.clients.claim();
     })
   );
 });
 
 self.addEventListener('fetch', function(event) {
+  console.log('self.registration.scope', self.registration.scope);
+  console.log('event.request', event.request);
   event.respondWith(
     caches.match(event.request).then(function(response) {
       return response || fetch(event.request);
