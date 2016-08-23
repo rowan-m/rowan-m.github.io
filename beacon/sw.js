@@ -33,8 +33,6 @@ self.addEventListener('activate', function(event) {
 });
 
 self.addEventListener('fetch', function(event) {
-  console.log('self.registration.scope', self.registration.scope);
-  console.log('event.request', event.request);
   event.respondWith(
     caches.match(event.request).then(function(response) {
       return response || fetch(event.request);
