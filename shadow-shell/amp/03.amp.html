@@ -1,0 +1,69 @@
+<!doctype html>
+<html ⚡>
+
+<head>
+  <meta charset="utf-8">
+  <title>I've been framed a third time</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/shadow-shell/img/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/shadow-shell/img/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/shadow-shell/img/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/shadow-shell/img/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/shadow-shell/img/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/shadow-shell/img/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/shadow-shell/img/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/shadow-shell/img/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/shadow-shell/img/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/shadow-shell/img/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/shadow-shell/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/shadow-shell/img/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/shadow-shell/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/shadow-shell/manifest.json">
+  <meta name="msapplication-TileColor" content="#607d8b">
+  <meta name="msapplication-TileImage" content="/shadow-shell/img/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#607d8b">
+  <link rel="canonical" href="https://merewood.org/shadow-shell/amp/03.amp.html">
+  <meta property="og:url" content="https://merewood.org/shadow-shell/amp/03.amp.html" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="I've been framed a third time" />
+  <meta property="og:description" content="This is yet another AMP page which will use a service worker to upgrade to an app shell experience." />
+  <meta property="og:image" content="https://merewood.org/shadow-shell/img/shell03.jpg" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+  <style amp-custom>
+    body {
+      font-family: Roboto, verdana, arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>I've been framed a third time</h1>
+  <p>This page is not stored in the service worker cache. If you go offline and try to load it, you should see the offline page.</p>
+  <p>This is a <a href="/shadow-shell/transfer.html">link to take you out to an HTML page</a>.</p>
+  <amp-img src="/shadow-shell/img/shell03.jpg" width="1000" height="658" layout="responsive" alt="Illustration of some seashells" attribution="American Seashells by R. Tucker Abbot, M.S"></amp-img>
+  <amp-analytics type="googleanalytics" id="googleanalytics">
+    <script type="application/json">
+      {
+        "vars": {
+          "account": "UA-24332431-2"
+        },
+        "triggers": {
+          "defaultPageview": {
+            "on": "visible",
+            "request": "pageview",
+            "vars": {
+              "title": "I've been framed a third time"
+            }
+          }
+        }
+      }
+    </script>
+  </amp-analytics>
+  <amp-install-serviceworker src="/shadow-shell/sw.js" data-iframe-src="/shadow-shell/sw.html" layout="nodisplay">
+  </amp-install-serviceworker>
+</body>
+
+</html>

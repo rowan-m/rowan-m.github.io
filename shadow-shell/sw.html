@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Service worker</title>
+</head>
+
+<body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/shadow-shell/sw.js');
+    }
+  </script>
+</body>
+
+</html>
