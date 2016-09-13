@@ -1,0 +1,14 @@
+{
+  "name": "standalone",
+  "short_name": "standalone",
+  "start_url": "/manifest-test/standalone.html",
+  "display": "standalone",
+  "background_color": "#607d8b",
+  "theme_color": "#607d8b",
+  "icons": [{
+    "src": "/manifest-test/standalone.png",
+    "sizes": "144x144",
+    "type": "image/png",
+    "density": "3.0"
+  }]
+}

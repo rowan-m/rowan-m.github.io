@@ -1,0 +1,14 @@
+{
+  "name": "minimal-ui",
+  "short_name": "minimal-ui",
+  "start_url": "/manifest-test/minimal-ui.html",
+  "display": "minimal-ui",
+  "background_color": "#607d8b",
+  "theme_color": "#607d8b",
+  "icons": [{
+    "src": "/manifest-test/minimal-ui.png",
+    "sizes": "144x144",
+    "type": "image/png",
+    "density": "3.0"
+  }]
+}

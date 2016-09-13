@@ -1,0 +1,14 @@
+{
+  "name": "Fullscreen",
+  "short_name": "Fullscreen",
+  "start_url": "/manifest-test/fullscreen.html",
+  "display": "fullscreen",
+  "background_color": "#607d8b",
+  "theme_color": "#607d8b",
+  "icons": [{
+    "src": "/manifest-test/fullscreen.png",
+    "sizes": "144x144",
+    "type": "image/png",
+    "density": "3.0"
+  }]
+}
