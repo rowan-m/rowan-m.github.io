@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1">
+<title>merewood.org</title>
+<h1>Sharing</h1>
+<button id="shareButton">Share</button>
+
+<script>
+function onShareClicked() {
+  navigator.share({
+    title: document.title,
+    text: "Hello World",
+    url: window.location.href
+}).then(() => console.log('Successful share'))
+.catch(error => console.log('Error sharing:', error));
+}
+
+var shareButton = document.getElementById('shareButton');
+shareButton.addEventListener('click', onShareClicked);
+</script>
