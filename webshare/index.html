@@ -8,15 +8,17 @@
 <button id="shareButton">Share</button>
 
 <script>
-function onShareClicked() {
-  navigator.share({
-    title: document.title,
-    text: "Hello World",
-    url: window.location.href
-}).then(() => console.log('Successful share'))
-.catch(error => console.log('Error sharing:', error));
-}
+  function onShareClicked() {
+    navigator.share({
+        title: document.title,
+        text: "Hello World",
+        url: window.location.href
+      }).then(() => console.log('Successful share'))
+      .catch(error => console.log('Error sharing:', error));
+  }
 
-var shareButton = document.getElementById('shareButton');
-shareButton.addEventListener('click', onShareClicked);
+  var shareButton = document.getElementById('shareButton');
+  shareButton.addEventListener('click', onShareClicked);
+  if (navigator.share === undefined)
+    shareButton.hidden = true;
 </script>
