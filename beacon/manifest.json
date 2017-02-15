@@ -3,7 +3,7 @@
   "name": "A wild Rowan appears!",
   "start_url": "/beacon/index.html",
   "display": "standalone",
-  "theme_color": "#52614b",
+  "theme_color": "#f9eccc",
   "background_color": "#f9eccc",
   "orientation": "any",
   "lang": "en-GB",
