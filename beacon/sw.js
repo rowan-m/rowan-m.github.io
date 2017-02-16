@@ -12,6 +12,12 @@ self.addEventListener('install', function(event) {
         '/beacon/img/grass-montillona-992x412.jpg',
         '/beacon/img/favicon-16x16.png',
         '/beacon/img/favicon-96x96.png',
+        'https://cdn.ampproject.org/v0.js',
+        'https://cdn.ampproject.org/v0/amp-analytics-0.1.js',
+        'https://cdn.ampproject.org/v0/amp-instagram-0.1.js',
+        'https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js',
+        'https://cdn.ampproject.org/v0/amp-social-share-0.1.js',
+        'https://fonts.googleapis.com/css?family=Roboto+Condensed|Rock+Salt'
       ]);
     })
   )
