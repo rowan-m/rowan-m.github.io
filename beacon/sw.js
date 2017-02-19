@@ -1,4 +1,4 @@
-var cacheName = 'beacon-v20160817';
+var cacheName = 'beacon-v20170219';
 
 // Cache a very basic selection of resources
 self.addEventListener('install', function(event) {
@@ -7,7 +7,7 @@ self.addEventListener('install', function(event) {
       return cache.addAll([
         '/beacon/',
         '/beacon/index.html',
-        '/beacon/img/grass-montillona-1440x2232.jpg',
+        '/beacon/img/grass-montillona-720x1116.jpg',
         '/beacon/img/twitter-80x80.png',
         '/beacon/img/grass-montillona-992x412.jpg',
         '/beacon/img/favicon-16x16.png',
@@ -20,7 +20,7 @@ self.addEventListener('install', function(event) {
         'https://fonts.googleapis.com/css?family=Roboto+Condensed|Rock+Salt'
       ]);
     })
-  )
+  );
 });
 
 // Clean out old caches
