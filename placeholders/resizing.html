@@ -4,37 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>Vuukle AMP demo</title>
-  <link rel="canonical" href="https://merewood.org/vuukle/js-demo.html">
+  <link rel="canonical" href="https://merewood.org/placeholders/resizing.html">
   <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1">
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <style amp-custom>
-    .comments {
-      position: relative;
-      padding-bottom: 56.25%;
-      /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
-      padding-top: 30px;
-      height: 0;
-      overflow: hidden;
-    }
 
-    .comments amp-iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
   </style>
 </head>
 
 <body>
-  <h1>Vuukle AMP demo</h1>
-  <p>Here's some exciting content. You can use the Vuukle integration to tell us just how exciting it was.</p>
+  <h1>Placeholder resizing</h1>
+  <p>Below is an <tt>amp-iframe</tt> with a <tt>responsive</tt> layout. It has an <tt>amp-image</tt> that also uses a <tt>responsive</tt> layout and <strong>should</strong> maintain its aspect ratio.</p>
   <section class="comments">
-    <amp-iframe width="500" height="500" layout="responsive" sandbox="allow-scripts allow-popups allow-same-origin" allowfullscreen frameborder="0" src="https://gae-play.appspot.com/vuukle/iframe-src.html">
-      <amp-img layout="responsive" height="10" width="10" src="/vuukle/placeholder.png" placeholder></amp-img>
+    <amp-iframe width="200" height="800" layout="fixed" sandbox="allow-scripts allow-popups allow-same-origin" allowfullscreen frameborder="0" src="https://gae-play.appspot.com/placeholders/long-iframe-src.html">
+      <amp-img layout="responsive" height="10" width="10" src="/placeholders/static_square_placeholder.png" placeholder></amp-img>
     </amp-iframe>
   </section>
 </body>

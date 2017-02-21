@@ -4,8 +4,11 @@ threadsafe: true
 
 handlers:
 
-- url: /vuukle
-  static_dir: vuukle
-
 - url: /analytics
   static_dir: analytics
+
+- url: /placeholders
+  static_dir: placeholders
+
+- url: /vuukle
+  static_dir: vuukle
