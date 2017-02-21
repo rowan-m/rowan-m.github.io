@@ -10,22 +10,7 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
   <style amp-custom>
-    .comments {
-      position: relative;
-      padding-bottom: 56.25%;
-      /* proportion value to aspect ratio 16:9 (9 / 16 = 0.5625 or 56.25%) */
-      padding-top: 30px;
-      height: 0;
-      overflow: hidden;
-    }
 
-    .comments amp-iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
   </style>
 </head>
 
@@ -33,7 +18,7 @@
   <h1>Vuukle AMP demo</h1>
   <p>Here's some exciting content. You can use the Vuukle integration to tell us just how exciting it was.</p>
   <section class="comments">
-    <amp-iframe width="500" height="500" layout="responsive" sandbox="allow-scripts allow-popups allow-same-origin" allowfullscreen frameborder="0" src="https://gae-play.appspot.com/vuukle/iframe-src.html">
+    <amp-iframe width="400" height="658" layout="responsive" sandbox="allow-scripts allow-popups allow-same-origin" allowfullscreen frameborder="0" src="https://gae-play.appspot.com/vuukle/iframe-src.html">
       <amp-img layout="responsive" height="10" width="10" src="/vuukle/placeholder.png" placeholder></amp-img>
     </amp-iframe>
   </section>
