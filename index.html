@@ -2,17 +2,35 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,height=device-height,minimum-scale=1">
 <title>merewood.org</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="https://merewood.org/">
+<link rel="publisher" href="https://plus.google.com/+RowanMerewood/">
+
 <meta name="description" content="Rowan Merewood" />
 <meta itemprop="name" content="merewood.org">
 <meta itemprop="description" content="Rowan Merewood">
-<link rel="canonical" href="https://merewood.org/">
-<link rel="publisher" href="https://plus.google.com/+RowanMerewood/">
 <meta property="og:url" content="https://merewood.org/" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="merewood.org" />
 <meta property="og:description" content="Rowan Merewood" />
-<meta property="og:image" content="https://merewood.org/beacon/img/facebook-og.png" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#000000">
+<meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
 <meta name="theme-color" content="#000000">
+
 <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
 <style>
   body {
@@ -22,13 +40,13 @@
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: normal;
   }
 
   h1:before {
     content: "$";
-    margin-right: 1rem;
+    margin-right: 0.8rem;
   }
 
   h1:after {
@@ -42,4 +60,11 @@
     }
   }
 </style>
-<h1>Hello, world.</h1>
+<h1>echo "Hello, world."</h1>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js').then(function(registration) {});
+    });
+  }
+</script>
