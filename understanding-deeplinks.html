@@ -1,0 +1,38 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Understanding deeplinks</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#111111">
+<meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+<meta name="theme-color" content="#111111">
+<style>
+body {
+	padding: 1rem;
+	font: 1.2rem sans-serif;
+}
+
+a {
+	color: #00B7FF;
+}
+</style>
+<h1>Understanding deeplinks</h1>
+<p>When loading links in a page there are a number of different ways that these can trigger a deeplink into a given app. Some of these can give a sub-optimal user experience on different device / browser combinations.</p>
+<p>These are the links triggered from tapping the booking.com ad generated for the query "hotels st pancras".
+<ol>
+	<li><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjr6f6oytvUAhUalLIKHaKwDT4YABAAGgJscg&ohost=www.google.com&cid=CAESEeD27PxxNsUxJo_uMpPgBS0Z&sig=AOD64_2jIfNTN-rnxDu2_JuvWt4Uwlgw3A&q=&ved=0ahUKEwiD_vaoytvUAhXNa1AKHdnsBXgQ0QwIGw&adurl=">[google.com] googleadservices.com redirect</a></li>
+	<li><a href="http://www.booking.com/landmark/gb/st-pancras-station.en.html?aid=314919;label=st-pancras-station-dIxz6oSk80mi5zfKiB2tsQSM175497981294:pl:ta:p12820:p21,093,000:ac:ap1t1:neg:fi:tiaud-146342138230:kwd-342808732:lp9065271:li:dem:dm;ws=">[booking.com] HTTP target, redirect to HTTPS</a></li>
+	<li><a href="https://www.booking.com/landmark/gb/st-pancras-station.en.html?aid=314919;label=st-pancras-station-dIxz6oSk80mi5zfKiB2tsQSM175497981294:pl:ta:p12820:p21,093,000:ac:ap1t1:neg:fi:tiaud-146342138230:kwd-342808732:lp9065271:li:dem:dm;ws=">[booking.com] HTTPS target</a></li>
+</ol>
