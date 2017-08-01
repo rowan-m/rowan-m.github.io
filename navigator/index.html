@@ -6,14 +6,140 @@
   body {
     font-family: "Ubuntu", sans-serif;
     background: #000011;
-    background-attachment: fixed;
-    background-image: radial-gradient(#eeeeff, rgba(255, 255, 255, .2) 2px, transparent 40px),
-    radial-gradient(#eeeeff, rgba(255, 255, 255, .15) 1px, transparent 30px),
-    radial-gradient(#eeeeff, rgba(255, 255, 255, .1) 2px, transparent 40px),
-    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px);
-    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
-    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
-    color: #eeeeee;
+    background-attachment: scroll;
+    background-image:
+      radial-gradient(#99bbdd, rgba(255, 255, 255, .2) 2px, transparent 40px),
+      radial-gradient(#99bbdd, rgba(255, 255, 255, .15) 1px, transparent 30px),
+      radial-gradient(#99bbdd, rgba(255, 255, 255, .1) 2px, transparent 40px),
+      radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 30px),
+
+      repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0,0,0,0.6) 2px, rgba(0,0,0,0.6) 4px),
+
+      radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 44%),
+      radial-gradient(rgba(82, 128, 154, .5) 0%, transparent 38%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .5) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 30%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 35%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .5) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 42%),
+      radial-gradient(rgba(82, 128, 154, .5) 0%, transparent 45%),
+      radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 44%),
+      radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 38%),
+      radial-gradient(rgba(82, 128, 154, .5) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 30%),
+      radial-gradient(rgba(82, 128, 154, .5) 0%, transparent 35%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 40%),
+      radial-gradient(rgba(82, 128, 154, .5) 0%, transparent 42%),
+      radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 45%),
+      radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 40%);
+
+    background-size:
+      550px 550px,
+      350px 350px,
+      250px 250px,
+      150px 150px,
+
+      cover,
+
+      24vw 12vw,
+      22vw 10vw,
+      23vw 10vw,
+      24vw 12vw,
+      29vw 8vw,
+      25vw 10vw,
+      22vw 13vw,
+      28vw 10vw,
+      23vw 9vw,
+      20vw 8vw,
+      21vw 11vw,
+      20vw 12vw,
+      24vw 14vw,
+      28vw 9vw,
+      23vw 10vw,
+      24vw 14vw,
+      25vw 10vw,
+      23vw 12vw,
+      22vw 13vw,
+      22vw 11vw,
+      21vw 8vw,
+      24vw 9vw,
+      21vw 7vw,
+      29vw 8vw;
+
+
+    background-position:
+      0 0,
+      40px 60px,
+      130px 270px,
+      70px 100px,
+
+      0 0,
+
+      -01vw 0vw,
+      -02vw -02vw,
+      -03vw -04vw,
+      05vw 02vw,
+      10vw -01vw,
+      15vw 10vw,
+      26vw 10vw,
+      15vw 0vw,
+      17vw 10vw,
+      70vw 9vw,
+      25vw 11vw,
+      30vw 02vw,
+      63vw 10vw,
+      40vw 03vw,
+      50vw 04vw,
+      60vw 05vw,
+      65vw 12vw,
+      70vw 06vw,
+      80vw 07vw,
+      8vw -01vw,
+      90vw 08vw,
+      93vw 13vw,
+      94vw 17vw,
+      95vw 09vw;
+
+    background-repeat:
+      repeat,
+      repeat,
+      repeat,
+      repeat,
+
+      repeat,
+
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat,
+      no-repeat;
+    color: #ddddee;
     margin-top: 5vw;
   }
 
@@ -28,12 +154,12 @@
   .round {
     width: 10vw;
     height: 10vw;
-    border: 1vw solid #eeeeee;
+    border: 1vw solid #eeeeff;
     border-radius: 100%;
   }
 
   .connector {
-    border-bottom: 1vw solid #eeeeee;
+    border-bottom: 1vw solid #eeeeff;
     position: absolute;
     width: 69vw;
     height: 0;
