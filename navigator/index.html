@@ -7,21 +7,22 @@
     font-family: "Ubuntu", sans-serif;
     background: #000011;
     background-attachment: scroll;
-    background-image: radial-gradient(#99bbdd, rgba(255, 255, 255, .2) 3px, transparent 3vw),
+    background-image:
+    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 0, 0, 0.2) 2px, rgba(0, 0, 0, 0.2) 4px),
+
+    radial-gradient(#99bbdd, rgba(255, 255, 255, .2) 3px, transparent 3vw),
     radial-gradient(#99bbdd, rgba(255, 255, 255, .15) 3px, transparent 3vw),
     radial-gradient(#99bbdd, rgba(255, 255, 255, .1) 3px, transparent 3vw),
-    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 3px, transparent 3.5vw),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .2) 3px, transparent 3.5vw),
 
-    radial-gradient(#99bbdd, rgba(255, 255, 255, .2) 2px, transparent 0.7vw),
-    radial-gradient(#99bbdd, rgba(255, 255, 255, .15) 1px, transparent 1vw),
-    radial-gradient(#99bbdd, rgba(255, 255, 255, .1) 2px, transparent 1vw),
-    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 1vw),
-    radial-gradient(#99bbdd, rgba(255, 255, 255, .2) 2px, transparent 2vw),
-    radial-gradient(#99bbdd, rgba(255, 255, 255, .15) 1px, transparent 2vw),
-    radial-gradient(#99bbdd, rgba(255, 255, 255, .1) 2px, transparent 2vw),
-    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 2px, transparent 2.5vw),
-
-    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(0, 0, 0, 0.8) 2px, rgba(0, 0, 0, 0.8) 4px),
+    radial-gradient(#99bbdd, rgba(255, 255, 255, .2) 1px, transparent 0.7vw),
+    radial-gradient(#99bbdd, rgba(255, 255, 255, .15) 0.1vw, transparent 1vw),
+    radial-gradient(#99bbdd, rgba(255, 255, 255, .1) 0.1vw, transparent 1vw),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 0.1vw, transparent 1vw),
+    radial-gradient(#99bbdd, rgba(255, 255, 255, .2) 1px, transparent 2vw),
+    radial-gradient(#99bbdd, rgba(255, 255, 255, .15) 0.1vw, transparent 2vw),
+    radial-gradient(#99bbdd, rgba(255, 255, 255, .1) 0.1vw, transparent 2vw),
+    radial-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, .1) 1px, transparent 2.5vw),
 
     radial-gradient(rgba(82, 128, 154, .9) 0%, transparent 40%),
     radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 44%),
@@ -48,7 +49,10 @@
     radial-gradient(rgba(82, 128, 154, .7) 0%, transparent 45%),
     radial-gradient(rgba(82, 128, 154, .6) 0%, transparent 40%);
 
-    background-size: 7.1vw 7vw,
+    background-size:
+    cover,
+
+    7.1vw 7vw,
     10vw 9vw,
     9.2vw 8vw,
     7.2vw 7vw,
@@ -62,7 +66,6 @@
     9.2vw 9.2vw,
     10.1vw 10.1vw,
 
-    cover,
 
     24vw 12vw,
     22vw 10vw,
@@ -89,7 +92,10 @@
     21vw 7vw,
     29vw 8vw;
 
-    background-position: 6vw 1vw,
+    background-position:
+    0 0,
+
+    6vw 1vw,
     12vw 1.5vw,
     24vw 2vw,
     48vw 2.5vw,
@@ -102,8 +108,6 @@
     1vw 6vw,
     2vw 7vw,
     3vw 8vw,
-
-    0 0,
 
     -01vw 0vw,
     -02vw -02vw,
@@ -130,21 +134,22 @@
     94vw 4vw,
     95vw 6vw;
 
-    background-repeat: no-repeat,
-    no-repeat,
-    no-repeat,
-    no-repeat,
-
-    repeat-x,
-    repeat-x,
-    repeat-x,
-    repeat-x,
-    repeat-x,
-    repeat-x,
-    repeat-x,
-    repeat-x,
-
+    background-repeat:
     repeat,
+
+    no-repeat,
+    no-repeat,
+    no-repeat,
+    no-repeat,
+
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
+    repeat-x,
 
     no-repeat,
     no-repeat,
@@ -186,12 +191,13 @@
     height: 10vw;
     border: 0.8vw solid #eeeeff;
     border-radius: 100%;
-    box-shadow: 0 0 5px #eeeeff;
+    box-shadow: 0 0 .5vw #ccccdd, 0 0 .5vw #ccccdd;
   }
 
   .connector {
+    background: #eeeeff;
     border-bottom: 0.8vw solid #eeeeff;
-    box-shadow: 0 0 5px #eeeeff;
+    box-shadow: 0 0 .5vw #ccccdd, 0 0 .5vw #ccccdd;
     position: absolute;
     width: 69vw;
     height: 0;
