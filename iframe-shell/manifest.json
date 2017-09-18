@@ -1,6 +1,7 @@
 {
   "name": "AMP in a Shell",
   "short_name": "AMP Shell",
+  "manifest_version": 2,
   "start_url": "/iframe-shell/index.html",
   "display": "standalone",
   "background_color": "#607d8b",
