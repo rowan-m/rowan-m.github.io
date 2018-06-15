@@ -6,59 +6,47 @@ I hereby claim:
 
   * I am an admin of https://merewood.org
   * I am rowan_m (https://keybase.io/rowan_m) on keybase.
-  * I have a public key with fingerprint 4230 339C 1023 B77C 5729  B947 87A2 C5FC 58A1 9E9A
+  * I have a public key ASAobnJ4vRpPtn90NGmtUtBlAyJq0vCa8tlOnxt1xX19kQo
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "0101054ec894f916d680b66e43c884cc954670888c744a33c67eec06bbbaddbe4fdf0a",
-            "fingerprint": "4230339c1023b77c5729b94787a2c5fc58a19e9a",
-            "host": "keybase.io",
-            "key_id": "87a2c5fc58a19e9a",
-            "kid": "0101054ec894f916d680b66e43c884cc954670888c744a33c67eec06bbbaddbe4fdf0a",
-            "uid": "4c8e9b8852b8594474877d92bfc71c00",
-            "username": "rowan_m"
-        },
-        "service": {
-            "hostname": "merewood.org",
-            "protocol": "https:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "012034fc3c748104e66459583b8597ebd1011fd5a573b1b3147687bf2bcdc74243950a",
+      "host": "keybase.io",
+      "kid": "0120286e7278bd1a4fb67f743469ad52d06503226ad2f09af2d94e9f1b75c57d7d910a",
+      "uid": "4c8e9b8852b8594474877d92bfc71c00",
+      "username": "rowan_m"
     },
-    "ctime": 1487764804,
-    "expire_in": 157680000,
-    "prev": "6c5e442d56537fa2b54a77ddf1203db05021983b43c665daf7f14ed318417a50",
-    "seqno": 3,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1529058255,
+      "hash": "3893897f2b530665d5bd068b160587b2fcfbb22d28fa906365571ae08c31c57d734eeb4c0563d906163ba42e3bdfcdcb42f574c85f1a2f5d018545e5d6ec86dd",
+      "hash_meta": "f4e412b17a601e036d546c6e7ca52fe605d0bdc701b557f76c862fd19d56c4d5",
+      "seqno": 3081084
+    },
+    "service": {
+      "entropy": "Hg4u2SOHJDv7mdnVumLclbVA",
+      "hostname": "merewood.org",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.1.0"
+  },
+  "ctime": 1529058294,
+  "expire_in": 504576000,
+  "prev": "e39ed1b9ff7a1c1581758da95db68bdbe4014bc46a820bfe819f5bd02ce38e8f",
+  "seqno": 29,
+  "tag": "signature"
 }
 
 which yields the signature:
 
------BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.64
-Comment: https://keybase.io/crypto
-
-yMInAnicrVJbSBVBGN5jF9GIiiBKxGiiOpmd9jK7M3tAouxCRA9GWUG07MzOHjd1
-97S7x6OVUXalB6PwFNmFLtRDlA/RXSTtRmRUdCHspRdfEkmJsBtRs1JvPTbzMMw/
-3/fN9/38D8aPEgpjFVqqas+Q1hrr6T6aEdZfaVqyDRDPagTJbaCGjRys1mJBaNQ4
-FkgCUeJbhYxiHdq6pFkaFommMahQjCGlugo1JGKMKYLQVBSqIcaoqBFCTMsiDNqW
-LZqgDNiOm2J+2nfckMtCWREVRaeSKCsEIaoiWSc6RBiZMlVtqmJT0pkeEau9IGJw
-c8QMWMLxeI1fjBF7/8D/Z9+ZETlIMdMJxqpMsKpDiCBGyNJlYlMkUVGMgAHzXbOO
-cbTvZU3XqANNZYAX6x3Kor5GQf4A6pjPsp5nJTw/xalp3ws96tXyl+owTAfJiBk2
-piNolhHjj4hBHNfibeSMeuYHjueCpMSRNHQiVSnypEEswjLAGtKOzwwnQqiIZ+cr
-+ofVc0mNqgxC2VI1VUG2KRMVmjyNZUuyqFhEVEVZ0rFCeK80TbVMG9kSZJYiYSgh
-U43CBmyL64Gkwm2aKS4ZOCnXDDM+A033ujaOFmKFwtgxedF4CYUFE/8OXWJ6/i97
-ccVkfVf+4wxo6okvu7P39vzWzjnXtl9JVDrln97HWoRvZ8uE+Pd5X7vCL+072lZ0
-HLo4Lf/a88qSy8+UzMKzzbV+YsPU/oUtA80/m0t/rpstTTl4feahg1NuZLceM3KF
-Fx49HHrZsLb99YKCwVxxY9A1WCIVJfpyxtvh2PtVeQfa4uXw/H3hbvWH7Lhc7f5u
-r68zvAkHSkHf5eKBiacXv9r9psjt6jn568Ty3u5K49ajucUrqxrsRcdnVl9dM2l7
-/+mOH3TVPtD9ueDprCeXbh6++KINlTwffhf/OK78XPPXj0dAcW56a8XxGZvb8zbt
-7D81dPT7mdLeeMvKCbGlvcvHrhZ+AxmnPEk=
-=yyoK
------END PGP MESSAGE-----
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgKG5yeL0aT7Z/dDRprVLQZQMiatLwmvLZTp8bdcV9fZEKp3BheWxvYWTESpcCHcQg457Ruf96HBWBdY2pXbaL2+QBS8Rqggv+gZ9b0Czjjo/EIMkaLtAp7oMWcTm3N8KHUmHatAbICR5MC5h6fJKMQr4cAgHCo3NpZ8RAKnK8e8y2iJjkhsm47+in+RTWLNOYR/jSqAqwR4hWrXsLI1pHw9zpecFxyrLZ8XAupFzxoQNlmIEZmc28gsK/CKhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIF6Jhzie23JhLh842oHmJzRJjRxSRHJ9bb61Kmayzg4Xo3RhZ80CAqd2ZXJzaW9uAQ==
 
 And finally, I am proving ownership of this host by posting or
 appending to this document.
