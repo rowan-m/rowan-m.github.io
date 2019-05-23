@@ -2,20 +2,11 @@
 <html lang="en">
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Main site</title>
+<title>Cross-site cookies</title>
 
-<h1>Main site</h1>
-<p>Remote image: <img src="https://peaceful-wing.glitch.me/random.jpg"/></p>
-
-<p>Remote site cookies:</p>
+<h1>Cross-site cookies</h1>
+<p>The following cookies were sent with the request triggered by <tt>fetch('https://peaceful-wing.glitch.me/cookies.json', {credentials: 'include'})</tt>.</p>
+<p>Cookies sent for a cross-site request:</p>
 <pre id="remote-cookie-jar"></pre>
-
+<p>See these same cookies in a <a href="https://peaceful-wing.glitch.me/">same-site context</a>.</p>
 <script src="/samesite.js" async defer></script>
-
-<p>Visit <a href="https://peaceful-wing.glitch.me/">remote site</a>.</p>
-  
-  <form action="https://peaceful-wing.glitch.me/tmp-post" method="post">
-    <button type="submit">Submit</button>
-  </form>
-  
-  <iframe src="https://peaceful-wing.glitch.me/" height="200" width="300"></iframe>
