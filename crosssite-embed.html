@@ -11,7 +11,7 @@
       { credentials: "include" }
     );
     const data = await response.json();
-    window.top.postMessage(data, "https://samesite-sandbox.glitch.me");
+    window.parent.postMessage(data, "https://samesite-sandbox.glitch.me");
   }
 
   sendcookies();
