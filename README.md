@@ -1,3 +1,3 @@
-# Hello, world
+# Deprecated, you should visit [rowan.fyi](https://rowan.fyi)
 
-I am way too lazy to maintain anything properly, so currently it's the delightful GitHub Pages hosting [merewood.org](https://merewood.org).
+This is a relic and hosts a homepage for [merewood.org](https://merewood.org).
